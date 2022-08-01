@@ -1,6 +1,6 @@
 package web.data;
 
-import web.models.Car;
+import web.model.Car;
 
 
 import java.util.ArrayList;

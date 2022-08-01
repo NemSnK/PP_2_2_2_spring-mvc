@@ -21,7 +21,7 @@ public class CarsController {
     }
 
     @GetMapping("/cars")
-    public String showCar(@RequestParam(name = "count", defaultValue = "5") String count, Model model) {
+    public String showCars(@RequestParam(name = "count", defaultValue = "5") String count, Model model) {
         try {
             model.addAttribute("cars", carService.getCars(Integer.parseInt(count)));
         } catch (NumberFormatException e) {
